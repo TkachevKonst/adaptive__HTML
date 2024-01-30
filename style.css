@@ -275,7 +275,7 @@
     line-height: normal;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .menu .all_menu {
         padding-left: 32px;
         padding-right: 41px;

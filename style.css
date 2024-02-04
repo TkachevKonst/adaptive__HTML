@@ -123,7 +123,6 @@
 
 .content__box__two .content__box__two__sale .background img {
     width: 100%;
-
     min-width: 100%;
 }
 
@@ -189,7 +188,6 @@
 
 .content__box__two .content__box__two__center .background img {
     width: 100%;
-
     min-width: 100%;
 }
 
@@ -200,7 +198,21 @@
     max-height: 180px;
     position: relative;
 }
+.content__box__two__center__mobile{
+    display: none;
+}
+.content__box__two .background__mobile {
+    position: relative;
 
+}
+.content__box__two .background__mobile .background__mobile__background{
+    position: absolute;
+    top: 0px;
+}
+.content__box__two .background__mobile img{
+    max-width: 100%;
+    width: 100%;
+}
 .content__box__tree .text__head {
     padding-top: 96px;
     text-align: center;
@@ -280,6 +292,7 @@
         padding-left: 32px;
         padding-right: 41px;
     }
+
     .preview .content__box__one .content__box__one__img {
         max-width: 386px;
         max-height: 368px;
@@ -296,9 +309,11 @@
     .preview .content__box__one .content__box__one__text .text .text_tree {
         font-size: 24px;
     }
+
     .content__box__two .content__box__two__sale {
         gap: 19.4px;
     }
+
     .content__box__two .content__box__two__sale .background {
         max-width: 232px;
         max-height: 168px;
@@ -309,11 +324,62 @@
         max-width: 735px;
         max-height: 116px;
     }
+
     .content__box__two .content__box__two__center .background {
         max-width: 735px;
         max-height: 116px;
     }
+
     .content__box__tree .container__one {
         gap: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu .all_menu {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .menu .all_menu .base__menu {
+        width: 32px;
+        height: 23px;
+    }
+
+
+
+    .reg__button img,
+    .cart__button img {
+        display: none;
+    }
+    .all__content .preview .content__box__one .content__box__one__img{
+        display: none;
+    }
+    .all__content .preview{
+        height: 363px;
+    }
+    .all__content .preview .content__box__one .content__box__one__text{
+        margin: 0 auto;
+        padding-top: 148px;
+    }
+    .preview .content__box__one .content__box__one__text .text .text_one {
+        font-size: 38px;
+    }
+
+    .preview .content__box__one .content__box__one__text .text .text_two {
+        font-size: 20px;
+    }
+
+    .preview .content__box__one .content__box__one__text .text .text_tree {
+        font-size: 20px;
+    }
+    .content__box__two__center__mobile {
+        margin: 0 auto;
+        display: block;
+        max-width: 343.26px;
+        max-height: 111px;
+    }
+    .content__box__two__center .background{
+        display: none;
     }
 }

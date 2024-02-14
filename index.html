@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Shop</title>
 </head>
 
@@ -21,8 +23,50 @@
                     </div>
                 </div>
                 <div class="base__menu">
-                    <div class="menu__button">
-                        <img src="img/menu.svg" alt="menu">
+                    <button class="btn btn-primary menu__button border border-0 bg-transparent" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img
+                            src="img/menu.svg" alt="menu"></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">MENU</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Закрыть"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li class="heading"><a href="#"></a>MAN</li>
+                                <li>
+                                    <ul class="submenu">
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Bags</a></li>
+                                        <li><a href="#">Denim</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="heading"><a href="#"></a>WOMAN</li>
+                                <li>
+                                    <ul class="submenu">
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Jackets & Coats</a></li>
+                                        <li><a href="#">Polos</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="heading"><a href="#"></a>KIDS</li>
+                                <li>
+                                    <ul class="submenu">
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Jackets & Coats</a></li>
+                                        <li><a href="#">Polos</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Bags</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="reg__button">
                         <img src="img/reg.svg" alt="reg">
@@ -38,7 +82,7 @@
                 <div class="preview">
                     <div class="content__box__one">
                         <div class="content__box__one__img">
-                            <img src="img/preview 1.png" alt="img1">
+                            <img src="img/preview1.png" alt="img1">
                         </div>
                         <div class="content__box__one__text">
                             <div class="line">
@@ -61,7 +105,7 @@
                     <div class="content__box__two__sale">
                         <div class="box__one">
                             <div class="background">
-                                <img src="img/background 1.png" alt="background1">
+                                <img src="img/background1.png" alt="background1">
                                 <div class="content__text">
                                     <p class="text_one">30% OFF</p>
                                     <p class="text_two">FOR WOMEN</p>
@@ -70,7 +114,7 @@
                         </div>
                         <div class="box__two">
                             <div class="background">
-                                <img src="img/background 2.png" alt="background2">
+                                <img src="img/background2.png" alt="background2">
                             </div>
                             <div class="content__text">
                                 <p class="text_one">HOT DEAL</p>
@@ -79,7 +123,7 @@
                         </div>
                         <div class="box__tree">
                             <div class="background">
-                                <img src="img/background 3.png" alt="background3">
+                                <img src="img/background3.png" alt="background3">
                             </div>
                             <div class="content__text">
                                 <p class="text_one">NEW ARRIVALS</p>
@@ -89,15 +133,15 @@
                     </div>
                     <div class="content__box__two__center">
                         <div class="background">
-                            <img src="img/background 4.png" alt="background4">
+                            <img src="img/background4.png" alt="background4">
                         </div>
                         <div class="content__box__two__center__mobile">
                             <div class="background__mobile">
                                 <div class="background__mobile__base">
-                                    <img src="img/Layer 45.png" alt="background5">
+                                    <img src="img/Layer45.png" alt="background5">
                                 </div>
                                 <div class="background__mobile__background">
-                                    <img src="img/Rectangle 20.svg" alt="background5">
+                                    <img src="img/Rectangle20.svg" alt="background5">
                                 </div>
 
                             </div>
@@ -115,10 +159,13 @@
                     </div>
                     <div class="container__one">
                         <div class="box">
-                            <div class="product_img__one">
-                                <div class="button__add">
-                                    <a class="button__add__basket" href="#"><img src="img/basket.svg"
-                                            alt="basket"> Add to Cart</a>
+                            <div class="product_img">
+                                <div class="base__img">
+                                    <img class="base__img__product" src="img/product1.png" alt="product 1">
+                                    <div class="button__add">
+                                        <a class="button__add__basket" href="#"><img src="img/basket.svg" alt="basket">
+                                            Add to Cart</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content__text">
@@ -130,10 +177,13 @@
                             </div>
                         </div>
                         <div class="box">
-                            <div class="product_img__two">
-                                <div class="button__add">
-                                    <a class="button__add__basket" href="#"><img src="img/basket.svg"
-                                        alt="basket"> Add to Cart</a>
+                            <div class="product_img">
+                                <div class="base__img">
+                                    <img class="base__img__product" src="img/product2.png" alt="product 2">
+                                    <div class="button__add">
+                                        <a class="button__add__basket" href="#"><img src="img/basket.svg" alt="basket">
+                                            Add to Cart</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content__text">
@@ -145,10 +195,13 @@
                             </div>
                         </div>
                         <div class="box">
-                            <div class="product_img__tree">
-                                <div class="button__add">
-                                    <a class="button__add__basket" href="#"><img src="img/basket.svg"
-                                        alt="basket"> Add to Cart</a>
+                            <div class="product_img">
+                                <div class="base__img">
+                                    <img class="base__img__product" src="img/product3.png" alt="product 3">
+                                    <div class="button__add">
+                                        <a class="button__add__basket" href="#"><img src="img/basket.svg" alt="basket">
+                                            Add to Cart</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content__text">
@@ -160,10 +213,13 @@
                             </div>
                         </div>
                         <div class="box">
-                            <div class="product_img__four">
-                                <div class="button__add">
-                                    <a class="button__add__basket" href="#"><img src="img/basket.svg"
-                                        alt="basket"> Add to Cart</a>
+                            <div class="product_img">
+                                <div class="base__img">
+                                    <img class="base__img__product" src="img/product4.png" alt="product 4">
+                                    <div class="button__add">
+                                        <a class="button__add__basket" href="#"><img src="img/basket.svg" alt="basket">
+                                            Add to Cart</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content__text">
@@ -175,10 +231,13 @@
                             </div>
                         </div>
                         <div class="box">
-                            <div class="product_img__five">
-                                <div class="button__add">
-                                    <a class="button__add__basket" href="#"><img src="img/basket.svg"
-                                        alt="basket"> Add to Cart</a>
+                            <div class="product_img">
+                                <div class="base__img">
+                                    <img class="base__img__product" src="img/product5.png" alt="product 5">
+                                    <div class="button__add">
+                                        <a class="button__add__basket" href="#"><img src="img/basket.svg" alt="basket">
+                                            Add to Cart</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content__text">
@@ -190,10 +249,13 @@
                             </div>
                         </div>
                         <div class="box">
-                            <div class="product_img__six">
-                                <div class="button__add">
-                                    <a class="button__add__basket" href="#"><img src="img/basket.svg"
-                                        alt="basket"> Add to Cart</a>
+                            <div class="product_img">
+                                <div class="base__img">
+                                    <img class="base__img__product" src="img/product6.png" alt="product 6">
+                                    <div class="button__add">
+                                        <a class="button__add__basket" href="#"><img src="img/basket.svg" alt="basket">
+                                            Add to Cart</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="content__text">
@@ -243,7 +305,6 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="container__tree">
                             <div class="img__logo">
                                 <img src="img/crown.svg" alt="crown">
@@ -291,6 +352,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
         <footer class="contacts">
             <div class="contacts__container">
@@ -314,6 +376,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

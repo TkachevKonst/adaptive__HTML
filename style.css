@@ -52,7 +52,38 @@
     justify-content: space-between;
     width: 159px;
     height: 29px;
+    align-items: center;
 }
+
+.offcanvas {
+    height: 634px;
+}
+
+.list-unstyled li {
+    list-style-type: none;
+}
+
+.list-unstyled a {
+    text-decoration: none;
+}
+
+.list-unstyled .heading {
+    color: rgb(241, 109, 127);
+    font-size: 14px;
+    margin-top: 1em;
+}
+
+.list-unstyled .submenu li {
+    line-height: 1.8;
+}
+
+.list-unstyled .submenu a {
+    color: rgb(111, 110, 110);
+    font-size: 14px;
+
+}
+
+.list-unstyled .submenu li {}
 
 .content {
     width: 100%;
@@ -247,68 +278,32 @@
     flex-wrap: wrap;
 }
 
-.content__box__tree .container__one .box .product_img__one {
+.content__box__tree .container__one .box .product_img {
     max-width: 360px;
     min-height: 420px;
-    background-image: url(img/product\ 1.png);
-	background-size: cover;
-}
-.content__box__tree .container__one .box .product_img__one:hover{
-    filter: contrast(25%);
-}
-.content__box__tree .container__one .box .product_img__two:hover{
-    filter: contrast(25%);
-}
-.content__box__tree .container__one .box .product_img__tree:hover{
-    filter: contrast(25%);
-}
-.content__box__tree .container__one .box .product_img__four:hover{
-    filter: contrast(25%);
-}
-.content__box__tree .container__one .box .product_img__five:hover{
-    filter: contrast(25%);
-}
-.content__box__tree .container__one .box .product_img__six:hover{
-    filter: contrast(25%);
 }
 
-.content__box__tree .container__one .box .product_img__two {
-    max-width: 360px;
-    min-height: 420px;
-    background-image: url(img/product\ 2.png);
+.content__box__tree .container__one .box .product_img .base__img {
+    z-index: 0;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
 }
 
-.content__box__tree .container__one .box .product_img__tree {
-    max-width: 360px;
-    min-height: 420px;
-    background-image: url(img/product\ 3.png);
+.content__box__tree .container__one .box .product_img .base__img .base__img__product {
+    max-width: 100%;
+    width: 100%;
 }
 
-.content__box__tree .container__one .box .product_img__four {
-    max-width: 360px;
+.content__box__tree .container__one .box .button__add {
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 360px;
     min-height: 420px;
-    background-image: url(img/product\ 4.png);
-}
-
-.content__box__tree .container__one .box .product_img__five {
-    max-width: 360px;
-    min-height: 420px;
-    background-image: url(img/product\ 5.png);
-}
-
-.content__box__tree .container__one .box .product_img__six {
-    max-width: 360px;
-    min-height: 420px;
-    background-image: url(img/product\ 6.png);
-}
-
-.content__box__tree .container__one .box .button__add {  
-    max-width: 360px;
-    min-height: 420px;
-    display: none;
-}
-.content__box__tree .container__one .box .button__add:hover{
-    display: block;
 }
 
 .content__box__tree .container__one .box .button__add__basket {
@@ -321,6 +316,11 @@
     color: rgb(255, 255, 255);
     font-size: 14px;
     text-align: center;
+}
+
+.content__box__tree .container__one .box .product_img:hover .button__add {
+    background: rgba(58, 56, 56, 0.86);
+    z-index: 1;
 }
 
 .content__box__tree .container__one .content__text {
@@ -603,15 +603,18 @@
     .content__box__tree .container__one {
         gap: 16px;
     }
-    .content__box__four .content__box__four__content{
+
+    .content__box__four .content__box__four__content {
         flex-direction: column;
         height: 610px;
         gap: 48px;
     }
-    .content__box__five .content__box__five__content{
+
+    .content__box__five .content__box__five__content {
         flex-direction: column;
+        padding-top: 25px;
     }
-    
+
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -667,13 +670,36 @@
     .content__box__two__center .background {
         display: none;
     }
-    .content__box__four .content__box__four__content{
+
+    .content__box__four .content__box__four__content {
         height: 610px;
-        gap: 48px;
+        gap: 0px;
     }
+
     .contacts .contacts__container {
         height: 143px;
         flex-direction: column-reverse;
     }
-    
+
+    .content__box__tree .container__one .box .product_img {
+        max-width: 320px;
+    }
+
+    .content__box__tree .container__one .box .button__add {
+        width: 320px;
+
+    }
+
+
+    .content__box__five .content__box__five__content {
+        padding-top: 15px;
+    }
+
+    .content__box__four .text__two {
+        padding-top: 14px;
+    }
+
+    .content__box__four .img__logo {
+        padding-left: 139px;
+    }
 }
